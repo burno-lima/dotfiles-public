@@ -4,6 +4,8 @@
 
 **Warning**: Don't blindly use my settings unless you know what that entails. Use at your own risk!
 
+> **Note**: These configurations are based on Linux Mint or any other Debian-based distribution.
+
 ## Contents
 
 - Neovim config
