@@ -1,5 +1,0 @@
-return {
-  {
-    "ellisonleao/gruvbox.nvim",
-  },
-}
