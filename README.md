@@ -24,6 +24,8 @@
 - **btop** - system monitor
 - **Zellij** - terminal multiplexer
 - **Docker** - containerization platform
+- **Flatpak** - universal package manager for Linux
+- **Windsurf** - AI-powered code editor
 - **OpenCode** - AI code assistant
 
 ## Font
