@@ -28,9 +28,9 @@ install_apt_packages() {
   sudo apt update -y
   sudo apt upgrade -y
 
-  PACKAGES=(fish btop neovim alacritty curl tar lazygit eza)
+  PACKAGES=(fish btop neovim alacritty curl tar lazygit eza ca-certificates)
   for pkg in "${PACKAGES[@]}"; do
-    if command_exists "$pkg"; then
+    if dpkg -l | grep -q "^ii  $pkg "; then
       log_info "$pkg is already installed."
     else
       log_info "Installing $pkg via APT..."
@@ -102,9 +102,12 @@ install_mise() {
     log_info "Mise is already installed."
   else
     log_info "Installing Mise..."
-    curl https://mise.run | sh
-    export PATH="$HOME/.local/bin:$PATH"
-    log_info "Make sure to add $HOME/.local/bin to your shell PATH for future sessions."
+    sudo install -dm 755 /etc/apt/keyrings
+    curl -fSs https://mise.jdx.dev/gpg-key.pub | sudo tee /etc/apt/keyrings/mise-archive-keyring.asc 1> /dev/null
+    echo "deb [signed-by=/etc/apt/keyrings/mise-archive-keyring.asc] https://mise.jdx.dev/deb stable main" | sudo tee /etc/apt/sources.list.d/mise.list
+    sudo apt update -y
+    sudo apt install -y mise
+    log_info "Mise installed successfully via apt."
   fi
 }
 
@@ -116,9 +119,6 @@ install_docker() {
     log_info "Docker is already installed."
   else
     log_info "Installing Docker..."
-    
-    log_info "Installing prerequisites..."
-    sudo apt install -y ca-certificates curl
     
     log_info "Setting up Docker GPG key..."
     sudo install -m 0755 -d /etc/apt/keyrings
