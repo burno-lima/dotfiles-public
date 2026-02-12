@@ -86,10 +86,12 @@ install_zellij() {
     log_info "Zellij is already installed."
   else
     log_info "Downloading Zellij latest release..."
-    curl -LO https://github.com/zellij-org/zellij/releases/latest/download/zellij-x86_64-unknown-linux-gnu.tar.gz
-    tar -xzf zellij-x86_64-unknown-linux-gnu.tar.gz
-    sudo mv zellij /usr/local/bin/
-    rm zellij-x86_64-unknown-linux-gnu.tar.gz
+    cd /tmp
+    wget -O zellij.tar.gz "https://github.com/zellij-org/zellij/releases/latest/download/zellij-x86_64-unknown-linux-musl.tar.gz"
+    tar -xf zellij.tar.gz zellij
+    # sudo install zellij /usr/local/bin
+    rm zellij.tar.gz zellij
+    cd -
     log_info "Zellij installed successfully at /usr/local/bin/zellij"
   fi
 }
