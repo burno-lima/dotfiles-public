@@ -8,4 +8,5 @@ rm zellij.tar.gz zellij
 cd -
 
 mkdir -p ~/.config/zellij
-cp -r $SCRIPT_DIR/zellij/config.kdl ~/.config/zellij/config.kdl
+cp $SCRIPT_DIR/zellij/config.kdl ~/.config/zellij/config.kdl
+
