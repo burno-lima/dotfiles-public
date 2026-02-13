@@ -9,4 +9,4 @@ fish -c 'curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/fun
 # Tide installation
 fish -c 'fisher install IlanCosman/tide@v6'
 
-cp $SCRIPT_DIR/fish/config.fish ~/.config/fish/config.fish
+cp $SCRIPT_DIR/configs/fish/config.fish ~/.config/fish/config.fish

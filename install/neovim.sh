@@ -10,4 +10,4 @@ rm -rf nvim-linux-x86_64 nvim.tar.gz
 cd -
 
 mkdir -p ~/.config/nvim
-cp -r $SCRIPT_DIR/neovim ~/.config/nvim
+cp -r $SCRIPT_DIR/configs/neovim ~/.config/nvim

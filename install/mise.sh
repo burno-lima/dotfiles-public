@@ -9,4 +9,4 @@ sudo apt update -y
 sudo apt install -y mise
 
 mkdir -p ~/.config/mise
-cp $SCRIPT_DIR/mise/config.toml ~/.config/mise/config.toml
+cp $SCRIPT_DIR/configs/mise/config.toml ~/.config/mise/config.toml

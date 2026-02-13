@@ -3,4 +3,4 @@
 sudo apt install -y btop
 
 mkdir -p ~/.config/btop
-cp configs/btop/btop.conf ~/.config/btop/btop.conf
+cp $SCRIPT_DIR/configs/btop/btop.conf ~/.config/btop/btop.conf
