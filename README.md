@@ -26,6 +26,7 @@
 - **Docker** - containerization platform
 - **Flatpak** - universal package manager for Linux
 - **Windsurf** - AI-powered code editor
+- **Antigravity** - AI-powered code editor
 - **OpenCode** - AI code assistant
 
 ## Font
