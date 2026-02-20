@@ -1,5 +1,4 @@
 [tools]
 go = "latest"
-neovim = "latest"
 node = "latest"
 python = "latest"

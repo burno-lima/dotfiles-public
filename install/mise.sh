@@ -10,3 +10,5 @@ sudo apt install -y mise
 
 mkdir -p ~/.config/mise
 cp $SCRIPT_DIR/configs/mise/config.toml ~/.config/mise/config.toml
+
+mise install
