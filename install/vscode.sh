@@ -20,3 +20,9 @@ EOF
 sudo apt install -y apt-transport-https
 sudo apt update
 sudo apt install -y code
+
+mkdir -p ~/.config/Code/User
+
+cp $SCRIPT_DIR/configs/vscode.json ~/.config/Code/User/settings.json
+
+code --install-extension github.github-vscode-theme
