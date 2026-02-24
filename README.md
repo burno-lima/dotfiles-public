@@ -28,6 +28,7 @@
 - **Windsurf** - AI-powered code editor
 - **OpenCode** - AI code assistant
 - **VS Code** - code editor
+- **DBeaver** - database management tool
 
 ## Font
 
