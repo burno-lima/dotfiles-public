@@ -29,6 +29,7 @@
 - **OpenCode** - AI code assistant
 - **VS Code** - code editor
 - **DBeaver** - database management tool
+- **Beekeeper Studio** - database management tool
 
 ## Font
 
