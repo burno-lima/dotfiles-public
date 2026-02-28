@@ -29,6 +29,7 @@ keybinds clear-defaults=true {
         bind "z" { TogglePaneFrames; SwitchToMode "normal"; }
         bind "g" { Run "lazygit" {floating true; width "80%"; height "80%"; x "10%"; y "10%";}; SwitchToMode "normal"; }
         bind "a" { Run "opencode" {floating true; width "80%"; height "80%"; x "10%"; y "10%";}; SwitchToMode "normal"; }
+        bind "b" { Run "btop" {floating true; width "80%"; height "80%"; x "10%"; y "10%";}; SwitchToMode "normal"; }
     }
     tab {
         bind "left" { GoToPreviousTab; }
